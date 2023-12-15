@@ -81,21 +81,25 @@ def menu():
                     run5()
                     break
         if y == 100:
+            down = True
             up = False
             level_is_1 = True
         if y == 200:
-            level_is_2 = True
-        if y == 300:
-            level_is_3 = True
-        if y == 400:
-            level_is_4 = True
-        elif y == 500:
-            down = False
-            level_is_5 = True
-        else:
             up = True
             down = True
-            c = 0
+            level_is_2 = True
+        if y == 300:
+            up = True
+            down = True
+            level_is_3 = True
+        if y == 400:
+            up = True
+            down = True
+            level_is_4 = True
+        elif y == 500:
+            up = True
+            down = False
+            level_is_5 = True
         y_t = 0
         for i in list_of_level:
             y_t += 100
